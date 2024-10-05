@@ -25,7 +25,8 @@ export default function Router() {
     {
       path: 'auth',
       children: [
-        { path: 'login', element: <Login /> }
+        { path: 'login', element: <Login /> },
+        { path: 'register', element: <Register /> }
         ],
     },
     {
@@ -73,3 +74,4 @@ const PageFive = Loadable(lazy(() => import('../pages/PageFive')));
 const PageSix = Loadable(lazy(() => import('../pages/PageSix')));
 const NotFound = Loadable(lazy(() => import('../pages/Page404')));
 const Login = Loadable(lazy(() => import('../pages/auth/Login')));
+const Register = Loadable(lazy(() => import('../pages/auth/Register')));
